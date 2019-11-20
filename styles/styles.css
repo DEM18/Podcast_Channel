@@ -1,10 +1,35 @@
+/*---- MAIN CONFIGURATION----*/
 *{
     margin: 0;
     padding: 0;
     border: 0;
 }
-
-h1{
-    font-family: monospace;
- 
+/*---------NAVIGATION BAR----------*/
+nav{
+    display: flex;
+    height: 80px;
+    align-items: center;
 }
+
+.logo{
+    width: 36px;
+    height: 36px;
+    margin-left: 100px;
+    margin-top: 22px;
+    margin-right: 600px;
+}
+
+.navBar-options{
+    display: flex;
+    font-family: IBMPlexMono;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+    list-style: none;
+}
+
+.navBar-options li{
+    margin: 35px;
+}
+

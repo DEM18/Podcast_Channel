@@ -3,33 +3,33 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
-/*---------NAVIGATION BAR----------*/
-nav{
+
+body{
+    width:320px;
+    margin:0 auto;
+}
+/*---------HEADER----------*/
+
+.header-container{
+    background-color: bisque;
     display: flex;
-    height: 80px;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.logo{
-    width: 36px;
-    height: 36px;
-    margin-left: 100px;
-    margin-top: 22px;
-    margin-right: 600px;
+.image-container{
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    margin-top: 10px;
 }
 
-.navBar-options{
+.menuIcon-cointainer{
     display: flex;
-    font-family: IBMPlexMono;
-    font-size: 16px;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 28px;
-    list-style: none;
-}
-
-.navBar-options li{
-    margin: 35px;
+    width: 18px;
+    height: 12px;
+    
 }
 

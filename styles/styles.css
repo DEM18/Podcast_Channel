@@ -9,27 +9,108 @@
 body{
     width:320px;
     margin:0 auto;
+
+}
+
+.main-container{
+    background-color: ghostwhite;
+    padding: 16px;
+}
+
+/*-------BUTTONS CTA-------*/
+
+.cta{
+    background: #00F3BB;
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family:'IBM Plex Mono', monospace; 
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+/*-----TITLES------*/
+
+.title{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+
 }
 /*---------HEADER----------*/
 
 .header-container{
-    background-color: bisque;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
 .image-container{
     width: 24px;
     height: 24px;
-    margin-left: 16px;
-    margin-top: 10px;
 }
 
 .menuIcon-cointainer{
     display: flex;
     width: 18px;
     height: 12px;
-    
 }
 
+/*---------SECTION 1 ---------*/
+
+.title.section1{
+    margin-bottom: 3%;
+}
+
+.titleWithLineThrough-container{
+    display: flex;
+}
+
+.titlewithoutLine{
+    width: 85px;
+    height: 42px;
+}
+
+.titleWithLineThrough{
+    width: 101px;
+    height: 42px;
+    text-decoration: line-through
+}
+
+.section1-text-container{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 7%;
+}
+
+.cta.section1{
+    margin-bottom: 4%;
+}
+
+/*---------SECTION2--------*/
+
+
+.title.section2{
+    margin-top: 12%;
+    margin-bottom: 4%;
+    color:  #060A24;
+    width: 157px;
+    height: 42px;
+}
+
+.player{
+    width: 298px;
+    height: 225px;
+ }

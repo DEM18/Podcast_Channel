@@ -3,9 +3,44 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
-/*---------NAVIGATION BAR----------*/
-nav{
+/*---------HEADER----------*/
+
+.cointainer{
+    width: 320px;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+}
+
+
+.menu{
+    margin-right: 2%;
+}
+
+.section-helloWorld{
+    margin-top: 8%;
+}
+
+.mainText p{
+    margin-top:3%;
+}
+
+.section-helloWorld button{
+    margin-top: 7%;
+    background: #00F3BB;
+    width: 288px;
+    height: 48px;
+
+}
+
+
+/* nav{
     display: flex;
     height: 80px;
     align-items: center;
@@ -33,3 +68,4 @@ nav{
     margin: 35px;
 }
 
+ */

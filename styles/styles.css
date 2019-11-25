@@ -130,3 +130,20 @@ body{
      width: 360px;
      height:519px;
  }
+
+ /*---------SECTION4-----------*/
+
+ .imageGuest-container img{
+     width: 220px;
+     height: 200px;
+ }
+
+ /*----------SECTION5----------*/
+
+ .section5-container{
+     margin-top: 9%;
+ }
+
+ .title.section5{
+     margin-bottom: 4%;
+ }

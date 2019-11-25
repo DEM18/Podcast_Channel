@@ -43,6 +43,17 @@ body{
     line-height: 42px;
 
 }
+
+/*------TEXT--------------*/
+
+.text{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: justify;
+}
 /*---------HEADER----------*/
 
 .header-container{
@@ -86,12 +97,6 @@ body{
 }
 
 .section1-text-container{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 22px;
-    text-align: justify;
     margin-bottom: 7%;
 }
 
@@ -113,4 +118,15 @@ body{
 .player{
     width: 298px;
     height: 225px;
+ }
+
+ /*-------SECTION3----------*/
+
+ .section3-container{
+     margin-top: 9%;
+ }
+
+ .imagePhone-container img{
+     width: 360px;
+     height:519px;
  }

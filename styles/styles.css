@@ -30,7 +30,6 @@ body{
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
-    font-weight: 500;
 }
 
 /*-----TITLES------*/
@@ -50,7 +49,7 @@ h3{
 p{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
-    color: #060A24;
+    color:#060A24;
     letter-spacing: 0;
     line-height: 22px;
 
@@ -78,32 +77,36 @@ p{
 
 /*---------FIRST-SECTION ---------*/
 
-.title-first-section{
+.first-section h1{
     margin-top:29px;   
     height: 42px;
     width: 212px;
 }
 
-.world-title{
+.world-line-through{
     text-decoration: line-through;
 }
 
-.paragraph-first-section{
+.first-section p{
     margin-top: 58px;
+    height: 66px;
 }
 
-.cta.first-section{
+.first-section button.cta{
     margin-top: 36px;
+    margin-bottom: 24px;
 }
-/*--------SECOND-SECTION--------*/
 
+/*--------SECOND-SECTION--------*/
+/* 
 .second-section{
     margin-top: 24px;
     padding: 0;
 }
-
-.title-second-section{
+ */
+.second-section h2{
     margin-top:64px;
+    margin-bottom: 21px;
     max-width: 157px;
     margin-right: 147px;
 }
@@ -112,14 +115,16 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:21px;
 }
 
 .list-content img{
-    margin: 11px;
+    margin-bottom: 11px;
     width: 298px;
     height: 225px;
+}
 
+.list-content img.podcast-spotify{
+    margin-bottom: 0;
 }
 
  /*-------THIRD SECTION----------*/
@@ -136,13 +141,13 @@ p{
      height:519px;
  }
 
- .title-third-section{
+ .third-section h2{
     margin-top: 27px;
     width: 288px;
     height: 84px;
  }
 
- .paragraph-third-section{
+ .paragraph{
      margin-top:8px;
      width: 288px;
      height: 254px;
@@ -150,13 +155,13 @@ p{
 
  /*-----------FOUR SECTION--------*/
 
- .title-four-section{
+ .four-section h2{
      margin-top: 54px;
      width: 288px;
      height: 84px;
  }
 
- .photowall{
+ .gallery{
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -164,22 +169,45 @@ p{
      margin-top: 14px;
  }
 
- .photowall img{
+ .gallery img{
      width: 320px;
      height: 243px;
  }
 
  /*-------FIVE SECTION-----------*/
 
- .title-five-section{
+ .five-section h2{
      margin-top: 48px;
+     width: 288px;
+     height: 84px;
  }
 
  .list-topics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .topic{
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin-top: 24px;
+     justify-content: center;
+     height: 130px;
+ }
+
+ .topic.one{
+     margin-top: 37px;
+ }
+
+.topic.two{
+     margin-top: 36px;
+ }
+
+ .topic.three,
+ .topic.four{
+     margin-top:52px;
  }
 
  .list-topics img{
@@ -187,15 +215,15 @@ p{
      height:104px;
      margin: 13px 108px;
  }
-
+ 
  .list-topics span{
     font-family: 'IBMPlexSans-SemiBold';
     font-size: 24px;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
-    
- }
+    margin-bottom: 36px;
+ }  
 
  /*---------SIX SECTION---------*/
 
@@ -203,28 +231,29 @@ p{
      margin-top:42px;
  }
 
- .title-six-section{
+ .six-section h2{
      width: 288px;
      height:126px;
      text-align: center;
      margin-top:64px;
  }
 
- .cta.six-section{
+ .six-section button.cta{
      margin-top: 36px;
-     margin-bottom: 67px;
  }
  /*-----------FOOTER-----------*/
 
- .footer-content{
+ .copyright{
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      width: 100%;
+     margin-top:91px;
+    
  }
 
- .footer-content h4{
+ .text{
     font-family: 'IBMPlexMono', monospace;
     font-size: 14px;
     color: #060A24;
@@ -235,11 +264,22 @@ p{
     text-align: center;
  }
 
- .footer-icons{
+ .icons{
     margin-top: 16px;
+    width: 100%;
+    display: flex; 
  }
 
- .footer-icons i{
-    width: 16px;
-    height: 28px;
+ .icons i{
+    width: 20%;
+    text-align:center;
+ 
+ }
+
+ i.fa.fa-spotify{
+    padding-left: 45px;
+ }
+
+ i.fa.fa-telegram{
+     padding-right: 45px;
  }

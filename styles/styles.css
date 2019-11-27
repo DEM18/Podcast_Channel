@@ -12,8 +12,8 @@ body{
 
 }
 
-.main-content{
-    background-color: ghostwhite;
+.main-wrapper{
+    background-color:ghostwhite;
     padding: 16px;
 }
     
@@ -25,12 +25,12 @@ body{
     height: 48px;
     font-size: 16px;
     text-transform: uppercase;
-    font-family:'IBM Plex Mono', monospace; 
+    font-family: 'IBMPlexMono';
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /*-----TITLES------*/
@@ -53,8 +53,7 @@ p{
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
-    width: 288px;
-    height: 66px;
+
 }
 /*---------HEADER----------*/
 
@@ -169,6 +168,52 @@ p{
      width: 320px;
      height: 243px;
  }
+
+ /*-------FIVE SECTION-----------*/
+
+ .title-five-section{
+     margin-top: 48px;
+ }
+
+ .list-topics{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 24px;
+ }
+
+ .list-topics img{
+     width: 104px;
+     height:104px;
+     margin: 13px 108px;
+ }
+
+ .list-topics span{
+    font-family: 'IBMPlexSans-SemiBold';
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    
+ }
+
+ /*---------SIX SECTION---------*/
+
+ .six-section{
+     margin-top:42px;
+ }
+
+ .title-six-section{
+     width: 288px;
+     height:126px;
+     text-align: center;
+     margin-top:64px;
+ }
+
+ .cta.six-section{
+     margin-top: 36px;
+     margin-bottom: 67px;
+ }
  /*-----------FOOTER-----------*/
 
  .footer-content{
@@ -179,11 +224,22 @@ p{
      width: 100%;
  }
 
+ .footer-content h4{
+    font-family: 'IBMPlexMono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 227px;
+    height: 22px;
+    text-align: center;
+ }
+
  .footer-icons{
-     justify-content: space-between;
+    margin-top: 16px;
  }
 
  .footer-icons i{
-     font-size: 28px;
-     margin-right: 38px;
+    width: 16px;
+    height: 28px;
  }

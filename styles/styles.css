@@ -13,10 +13,33 @@ body{
 }
 
 .main-wrapper{
-    background-color:ghostwhite;
     padding: 16px;
-}
     
+}
+/*---------BACKGROUND-------*/
+
+.background-wrapper::before{
+    display: block;
+    content: "";
+    width: 100%;
+    transform: skew(10deg, 10deg);
+    position: absolute;
+    height: 100%;
+    background: blue;
+    z-index: 0;
+}
+
+.second-section,
+.third-section,
+.third-section,
+.four-section,
+.five-section,
+.six-section
+{
+    position: relative;
+    
+}
+
 /*-------BUTTONS CTA-------*/
 
 .cta{
@@ -25,7 +48,8 @@ body{
     height: 48px;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'IBMPlexMono';
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
@@ -39,10 +63,10 @@ h2,
 h3{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
-    color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
     height: 42px;
+    color: #060A24;
 }
 
 
@@ -109,6 +133,8 @@ p{
     margin-bottom: 21px;
     max-width: 157px;
     margin-right: 147px;
+    color: #FFFFFF;
+
 }
 
 .list-content{

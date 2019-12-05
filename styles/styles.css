@@ -14,31 +14,42 @@ body{
 
 .main-wrapper{
     padding: 16px;
-    
 }
-/*---------BACKGROUND-------*/
+  
+/*--- BACKGROUND-WRAPPER-----*/
+
+.background-wrapper{
+    position: relative;
+    max-width: 320px;
+	
+}
 
 .background-wrapper::before{
-    display: block;
-    content: "";
-    width: 100%;
-    transform: skew(10deg, 10deg);
     position: absolute;
-    height: 100%;
-    background: blue;
-    z-index: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+	transform-origin: top left;
+	transform: skewY(-3deg);
+	z-index: -10;
 }
 
-.second-section,
-.third-section,
-.third-section,
-.four-section,
-.five-section,
-.six-section
-{
-    position: relative;
-    
+.background-wrapper::after{
+    position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+	transform-origin: bottom left;
+	transform: skewY(3deg);
+	z-index: -10;
 }
+
 
 /*-------BUTTONS CTA-------*/
 
@@ -66,7 +77,6 @@ h3{
     letter-spacing: 0;
     line-height: 42px;
     height: 42px;
-    color: #060A24;
 }
 
 
@@ -76,35 +86,92 @@ p{
     color:#060A24;
     letter-spacing: 0;
     line-height: 22px;
-
 }
 /*---------HEADER----------*/
 
-.header-container{
+    /* header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container{
+        width: 24px;
+        height: 24px;
+    }
+
+    .menuIcon-cointainer{
+        display: flex;
+        width: 18px;
+        height: 12px;
+    }
+ */
+
+ /*-----CLOSE ICON-------*/
+
+ label .close-icon{
+     width: 18px;
+     height: 16px;
+ }
+
+/*---MENU HAMBURGER -------*/
+
+#page-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 29px;
+    justify-content: flex-end;
+    position: relative;
 }
 
-.image-container{
-    width: 24px;
-    height: 24px;
+#page-nav label{
+    display: inline-block;
 }
 
-.menuIcon-cointainer{
-    display: flex;
-    width: 18px;
-    height: 12px;
+#page-nav #hamburger     {
+    display: none;
+} 
+
+#page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top:44px;
 }
+
+#page-nav ul li {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ 
+#page-nav ul li a {
+    text-decoration: none;
+    color:ghostwhite;
+  }
+
+#page-nav ul {
+    display: none;
+
+}
+
+ #page-nav input:checked ~ ul {
+    background-color: blue;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+  }
+ /* 
+  .menu-list{
+    margin-top:80px;
+   max-width: 320px;
+   height: 224px;   
+  } */ 
 
 /*---------FIRST-SECTION ---------*/
 
 .first-section h1{
     margin-top:29px;   
     height: 42px;
-    width: 212px;
+    width: 222px;
 }
 
 .world-line-through{
@@ -206,6 +273,7 @@ p{
      margin-top: 48px;
      width: 288px;
      height: 84px;
+     margin-bottom: 24px;
  }
 
  .list-topics{
@@ -262,10 +330,24 @@ p{
      height:126px;
      text-align: center;
      margin-top:64px;
+     color:#FFFFFF;
  }
 
  .six-section button.cta{
      margin-top: 36px;
+     margin-bottom: 67px;
+ }
+
+ .background-wrapper.six-section::after{
+    position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(0deg);
+	z-index: -10;
  }
  /*-----------FOOTER-----------*/
 
@@ -280,6 +362,7 @@ p{
  }
 
  .text{
+    background-color:greenyellow;
     font-family: 'IBMPlexMono', monospace;
     font-size: 14px;
     color: #060A24;
@@ -288,24 +371,30 @@ p{
     width: 227px;
     height: 22px;
     text-align: center;
+    margin-bottom: 16px;
  }
 
  .icons{
-    margin-top: 16px;
-    width: 100%;
-    display: flex; 
+    background-color:goldenrod;
+    width: 227px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.icon{
+    display: flex;
+
+}
+
+
  }
 
- .icons i{
+/*  .icons i{
     width: 20%;
     text-align:center;
  
  }
-
- i.fa.fa-spotify{
-    padding-left: 45px;
- }
-
- i.fa.fa-telegram{
-     padding-right: 45px;
- }
+ */
+ 

@@ -20,7 +20,7 @@ body{
 
 .background-wrapper{
     position: relative;
-    max-width: 320px;
+    width: 320px;
 	
 }
 
@@ -77,6 +77,7 @@ h3{
     letter-spacing: 0;
     line-height: 42px;
     height: 42px;
+    font-weight: 400;
 }
 
 
@@ -166,9 +167,10 @@ p{
    height: 224px;   
   } */ 
 
-/*---------FIRST-SECTION ---------*/
+/*---------section-title ---------*/
 
-.first-section h1{
+
+.section-title h1{
     margin-top:29px;   
     height: 42px;
     width: 222px;
@@ -178,24 +180,25 @@ p{
     text-decoration: line-through;
 }
 
-.first-section p{
+.section-title p{
     margin-top: 58px;
     height: 66px;
 }
 
-.first-section button.cta{
+.section-title button.cta{
     margin-top: 36px;
     margin-bottom: 24px;
 }
 
-/*--------SECOND-SECTION--------*/
-/* 
-.second-section{
-    margin-top: 24px;
-    padding: 0;
+/*--------section-podcasts--------*/
+
+.section-podcasts{
+    max-width: 320px;
+    height: 1203.5px;
 }
- */
-.second-section h2{
+
+
+.section-podcasts h2{
     margin-top:64px;
     margin-bottom: 21px;
     max-width: 157px;
@@ -220,7 +223,11 @@ p{
     margin-bottom: 0;
 }
 
- /*-------THIRD SECTION----------*/
+ /*-------section-deDondeVenimos----------*/
+
+ .section-whereComeFrom{ 
+    margin-bottom: 54px;
+ }
 
  .img-phone-content{
      display: flex;
@@ -234,43 +241,42 @@ p{
      height:519px;
  }
 
- .third-section h2{
-    margin-top: 27px;
+ .section-whereComeFrom h2{
     width: 288px;
     height: 84px;
+    margin-bottom: 8px;
  }
 
  .paragraph{
-     margin-top:8px;
      width: 288px;
      height: 254px;
  }
 
- /*-----------FOUR SECTION--------*/
+ /*-----------specialGuests--------*/
 
- .four-section h2{
-     margin-top: 54px;
+
+ .section-specialGuests h2{
      width: 288px;
      height: 84px;
+     margin-bottom: 14px;
  }
 
- .gallery{
+ .gallery-images{
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     margin-top: 14px;
+     margin-bottom:48px;
  }
 
- .gallery img{
+ .gallery-images img{
      width: 320px;
      height: 243px;
  }
 
- /*-------FIVE SECTION-----------*/
+ /*-------ourTopics-----------*/
 
- .five-section h2{
-     margin-top: 48px;
+ .section-ourTopics h2{
      width: 288px;
      height: 84px;
      margin-bottom: 24px;
@@ -283,27 +289,32 @@ p{
     justify-content: center;
  }
 
+ 
  .topic{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:320px;
+    height: 162px;
+}
+ .list-topics.topic.one{
+     margin-top:40px
  }
 
  .topic.one{
-     margin-top: 37px;
+    margin-bottom: 36px;
  }
 
-.topic.two{
-     margin-top: 36px;
+ .topic.two,
+ .topic.three{
+     margin-bottom:52px;
  }
 
- .topic.three,
  .topic.four{
-     margin-top:52px;
+     margin-bottom: 42px;
  }
-
+ 
  .list-topics img{
      width: 104px;
      height:104px;
@@ -316,13 +327,13 @@ p{
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
-    margin-bottom: 36px;
  }  
 
  /*---------SIX SECTION---------*/
 
  .six-section{
      margin-top:42px;
+     margin-bottom: 24px;
  }
 
  .six-section h2{
@@ -351,42 +362,38 @@ p{
  }
  /*-----------FOOTER-----------*/
 
- .copyright{
+ footer{
      display: flex;
      flex-direction: column;
-     justify-content: center;
      align-items: center;
-     width: 100%;
-     margin-top:91px;
-    
  }
 
- .text{
-    background-color:greenyellow;
-    font-family: 'IBMPlexMono', monospace;
-    font-size: 14px;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 22px;
-    width: 227px;
-    height: 22px;
-    text-align: center;
-    margin-bottom: 16px;
+ .copyright{
+     margin-bottom: 16px; 
+     font-family: 'IBMPlexMono', monospace;
+     font-size: 14px;
+     color: #060A24;
+     letter-spacing: 0;
+     line-height: 22px;
+     text-align: center;
  }
 
- .icons{
-    background-color:goldenrod;
-    width: 227px;
-    height: 22px;
+ .list-icons{
+    margin-bottom: 31px;
+    width: 208px;
+    height: 28px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
- 
+
+
+/*  
 .icon{
     display: flex;
 
-}
+} */
 
 
  }

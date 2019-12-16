@@ -14,6 +14,7 @@ body{
 
 .main-wrapper{
     padding: 16px;
+    padding-top: 0px;
 }
   
 /*--- BACKGROUND-WRAPPER-----*/
@@ -21,7 +22,6 @@ body{
 .background-wrapper{
     position: relative;
     width: 320px;
-	
 }
 
 .background-wrapper::before{
@@ -67,6 +67,20 @@ body{
     line-height: 22px;
 }
 
+.cta:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    color:#FFFFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
 /*-----TITLES------*/
 
 h1,
@@ -90,29 +104,26 @@ p{
 }
 /*---------HEADER----------*/
 
-    /* header{
-        display: flex;
-        justify-content: center;
-    }
+header{
+    display: flex;
+    align-items:center;
+    width: 320px;
+    height: 44px;
+    padding:0px;
+    justify-content: space-between;
+}
 
-    .image-container{
-        width: 24px;
-        height: 24px;
-    }
-
-    .menuIcon-cointainer{
-        display: flex;
-        width: 18px;
-        height: 12px;
-    }
- */
+.image-container{
+    width: 24px;
+    height: 24px;
+}
 
  /*-----CLOSE ICON-------*/
 
- label .close-icon{
+ /* label .close-icon{
      width: 18px;
      height: 16px;
- }
+ } */
 
 /*---MENU HAMBURGER -------*/
 
@@ -124,23 +135,44 @@ p{
 
 #page-nav label{
     display: inline-block;
+    margin-right:16px;
 }
 
-#page-nav #hamburger     {
+#page-nav #hamburger{
     display: none;
 } 
+#page-nav #close-hamburguer{
+    display: none;
+}
 
 #page-nav ul {
+    width: 87px;
+    height: 28px;
+    top:30px;
+    text-transform: uppercase;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    top:44px;
 }
 
 #page-nav ul li {
     display: inline-block;
-    padding: 10px;
     box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 87px;
+    height: 28px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+#page-nav ul li:first-child{
+    margin-top:16px;
+}
+
+#page-nav ul li:last-child{
+    margin-bottom: 24px;
 }
  
 #page-nav ul li a {
@@ -150,7 +182,6 @@ p{
 
 #page-nav ul {
     display: none;
-
 }
 
  #page-nav input:checked ~ ul {
@@ -159,13 +190,39 @@ p{
     display: flex;
     flex-direction: column;
     width: 320px;
+    height: 224px;
   }
- /* 
-  .menu-list{
-    margin-top:80px;
-   max-width: 320px;
-   height: 224px;   
-  } */ 
+
+  #page-nav ul li a:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: #00F3BB;
+    text-decoration: line-through;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 87px;
+    height: 28px;
+    margin-bottom: 24px;
+}
+
+#page-nav ul li a:active {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #8F060A24;
+    text-decoration: line-through;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 87px;
+    height: 28px;
+    margin-bottom: 24px;
+}
+
+
 
 /*---------section-title ---------*/
 
@@ -195,6 +252,7 @@ p{
 .section-podcasts{
     max-width: 320px;
     height: 1203.5px;
+    margin-bottom:48px;
 }
 
 
@@ -223,25 +281,22 @@ p{
     margin-bottom: 0;
 }
 
- /*-------section-deDondeVenimos----------*/
-
- .section-whereComeFrom{ 
-    margin-bottom: 54px;
- }
+ /*-------section-AboutUs----------*/
 
  .img-phone-content{
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top:48px;
- }
- 
- .img-phone-content img{
-     width: 360px;
-     height:519px;
+     width: 320px;
+     margin-bottom: 27px;
  }
 
- .section-whereComeFrom h2{
+
+ .section-aboutUs{
+     margin-bottom:54px;
+ }
+
+ .section-aboutUs h2{
     width: 288px;
     height: 84px;
     margin-bottom: 8px;
@@ -287,6 +342,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom:42px;
  }
 
  
@@ -322,21 +378,26 @@ p{
  }
  
  .list-topics span{
-    font-family: 'IBMPlexSans-SemiBold';
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
     font-size: 24px;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
  }  
 
- /*---------SIX SECTION---------*/
+ /*---------breakingNews---------*/
 
- .six-section{
-     margin-top:42px;
-     margin-bottom: 24px;
+ .section-breakingNews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 341px;
+    margin-bottom: 24px;
  }
 
- .six-section h2{
+ .section-breakingNews h2{
      width: 288px;
      height:126px;
      text-align: center;
@@ -344,12 +405,12 @@ p{
      color:#FFFFFF;
  }
 
- .six-section button.cta{
+ .section-breakingNews button.cta{
      margin-top: 36px;
      margin-bottom: 67px;
  }
 
- .background-wrapper.six-section::after{
+ .background-wrapper.section-breakingNews::after{
     position: absolute;
 	content: "";
 	width: 100%;
@@ -387,21 +448,3 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-
-
-/*  
-.icon{
-    display: flex;
-
-} */
-
-
- }
-
-/*  .icons i{
-    width: 20%;
-    text-align:center;
- 
- }
- */
- 

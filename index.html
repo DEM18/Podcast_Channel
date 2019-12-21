@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.CSS">
     <script src="https://use.fontawesome.com/e10b036a83.js"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -8,111 +10,136 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500&display=swap" rel="stylesheet">
     <title>Podcast Channel</title>
 </head>
-
 <body>
-    <main class="main-wrapper">
-        <header>
-            <div class="logo">
-                <img src="images/icons/logo.svg" alt="logo">
-            </div> 
-            <nav id="page-nav">
-                <label for="close-icon" id="close-hamburguer">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+    <header>
+        <div class="logo">
+            <img src="images/icons/logo.svg" alt="logo">
+        </div> 
+        <nav class="page-nav">
+            <input type="checkbox" id="hamburger"/>
+                <label for="hamburger" class="close-hamburguer">
+                    <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                 </label>
-                <label for="hamburger" id="icon-hamburguer">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                <label for="hamburger" class="icon-hamburguer">
+                    <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
                 </label>
-                <input type="checkbox" id="hamburger"/>
                 <ul>
                     <li><a href="#episodes">episodios</a></li>
                     <li><a href="#aboutUs">nosotros</a></li>
                     <li><a href="#interviews">entrevistas</a></li>
                     <li><a href="#topics">tópicos</a></li>
-                  </ul>
-            </nav>
-        </header>
-        <section class="section-title">
-            <h1>Hello <span class="world-line-through">world </span>pale blue dot.</h1>
-            <p>Un podcast que explora el mundo de la programación. Nuevos episodios,
-                todos
-                los jueves cada 15
-                días.</p>
-            <button class="cta">conocé más</button>
-        </section>
-        <div class="background-wrapper">
-            <section class="section-podcasts" id="episodes">
-                <h2>Episodios</h2>
-                <div class="list-content">
-                    <img src="images/embed1_.png" alt="player1">
-                    <img src="images/embed2_.png" alt="player2">
-                    <img src="images/embed3_.png" alt="player3" class="podcast-spotify">
-                </div>
-            </section>
-        </div>
-                <figure class="img-phone-content">
-                    <img src="images/phone.png" alt="the secret History of Woman in Coding"  width= "360" height="519">
-                </figure>
-            <section id="aboutUs" class="section-aboutUs">
-                <h2>De donde venimos</h2>
-                <div class="paragraph">
-                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged
-                        position in the Universe, are challenged by this point of pale light.</p><br>
-                    <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
-                        vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-                </div>
-            </section>
-            <section class="section-specialGuests" id="interviews">
-                <h2>Invitadas/os estelares</h2>
-                <div class="gallery-images">
-                    <img src="images/grace-hopper.png" alt="graceHopper special guest">
-                    <img src="images/Katie-Bouman.png" alt="Katie-Bouman special guest">
-                    <img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton special guest">
-                    <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An ERA univec computer">
-                    <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac">
-                    <img src="images/susan-kare.png" alt="Susan Kare special guest">
-                </div>
-            </section>
-            <section class="section-ourTopics" id="topics">
-                <h2>Algunos de nuestros temas</h2>
-                 <div class="list-topics">
-                    <div class="topic one">
-                        <img src="images/icons/icon1.svg" alt="trabajo remoto">
-                        <span>Trabajo remoto</span>
-                    </div>
-                    <div class="topic two">
-                        <img src="images/icons/icon2.svg" alt="Repensando la programación">
-                        <span>Repensando la programación</span>
-                    </div>
-                    <div class="topic three">
-                        <img src="images/icons/icon3.svg" alt="Bases del código">
-                        <span>Bases del código</span>
-                    </div>
-                    <div class="topic four">
-                        <img src="images/icons/icon4.svg" alt="Seguridad Informática">
-                        <span>Seguridad informática</span>
-                    </div> 
-                </div> 
-            </section>
-            <div class="background-wrapper section-breakingNews">
-            <section class="section-breakingNews">
-                <h2>¿Querés las últimas novedades?</h2>
-                <button class="cta">Escuchá los episodios</button>
-            </section>
+                </ul>
+        </nav>
+    </header>
+    <section class="section-title">
+        <h1>Hello <span class="world-line-through">world </span>pale blue dot.</h1>
+        <p>Un podcast que explora el mundo de la programación. Nuevos episodios,todos los jueves cada 15 días.</p>
+        <button class="cta">conocé más</button>
+    </section>
+    <div class="background-wrapper">
+        <section class="section-podcasts" id="episodes">
+            <h2>Episodios</h2>
+            <div class="list-content">
+                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" 
+                        width="100%" height="232" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                </iframe>
+                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" 
+                        width="100%" height="232" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                </iframe>
+                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" 
+                        width="100%" 
+                        height="232"
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" 
+                        width="100%" 
+                        height="232"
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                </iframe>
             </div>
-        
-        <footer>
-                <div class="copyright">
-                    © 2019— Hello blue pale dot
-                </div>
-                <div class="list-icons">
-                    <i class="fa fa-spotify" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                    <i class="fa fa-telegram" aria-hidden="true"></i>
-                </div>
-        </footer>
-    </main>
+        </section>
+    </div>
+    <img class="img-phone-content" src="images/phone.png" 
+         alt="the secret History of Woman in Coding">
+    <section id="aboutUs" class="section-aboutUs">
+        <h2>De donde venimos</h2>
+            <div class="paragraph">
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged
+                    position in the Universe, are challenged by this point of pale light.</p><br>
+                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+    </section>
+    <section class="section-specialGuests" id="interviews">
+        <h2>Invitadas/os estelares</h2>
+        <div class="gallery-images">
+            <img src="images/grace-hopper.png" alt="graceHopper special guest">
+            <img src="images/Katie-Bouman.png" alt="Katie-Bouman special guest">
+            <img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton special guest">
+            <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An ERA univec computer">
+            <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" 
+                 alt="Computer operators with an Eniac">
+            <img src="images/susan-kare.png" alt="Susan Kare special guest">
+        </div>
+    </section>
+    <section class="section-ourTopics" id="topics">
+        <h2>Algunos de nuestros temas</h2>
+        <div class="list-topics">
+            <div class="topic">
+                <img src="images/icons/icon1.svg" alt="trabajo remoto">
+                <span>Trabajo remoto</span>
+            </div>
+            <div class="topic">
+                <img src="images/icons/icon2.svg" alt="Repensando la programación">
+                <span>Repensando la programación</span>
+            </div>
+            <div class="topic">
+                <img src="images/icons/icon3.svg" alt="Bases del código">
+                <span>Bases del código</span>
+            </div>
+            <div class="topic">
+                <img src="images/icons/icon4.svg" alt="Seguridad Informática">
+                <span>Seguridad informática</span>
+            </div> 
+        </div> 
+    </section>
+    <div class="background-wrapper section-breakingNews">
+    <section class="section-breakingNews">
+        <h2>¿Querés las últimas novedades?</h2>
+        <button class="cta">Escuchá los episodios</button>
+    </section>
+    </div>
+    <footer>
+        <div class="copyright">
+            © 2019— Hello blue pale dot
+        </div>
+        <div class="list-icons">
+            <a href="https://www.spotify.com/" target="_blank">
+                <i class="fa fa-spotify" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" targe="_blank">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="https://web.telegram.org/" target="_blank">
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+        </div>
+</footer>
 </body>
-
 </html>

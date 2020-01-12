@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<head>
+<head lang="es">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/styles.CSS">
+    <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://use.fontawesome.com/e10b036a83.js"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
@@ -32,43 +32,39 @@
         </nav>
     </header>
     <section class="section-title">
-        <h1>Hello <span class="world-line-through">world </span>pale blue dot.</h1>
-        <p>Un podcast que explora el mundo de la programación. Nuevos episodios,todos los jueves cada 15 días.</p>
+        <h1>Hello <span class="world-line-through">world </span>pale blue dot<span class="dot-responsive">.</span></h1>
+        <p>Un podcast que explora el mundo de la programación. 
+           Nuevos episodios,todos los jueves cada 15 días.</p>
+        <p class="responsive-desktop">
+            El portal de podcasts que explora el mundo de la programación y la tecnología. 
+            Nuevos episodios, todos los jueves cada 15 días.
+        </p>
         <button class="cta">conocé más</button>
     </section>
     <div class="background-wrapper">
         <section class="section-podcasts" id="episodes">
             <h2>Episodios</h2>
             <div class="list-content">
-                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" 
-                        width="100%" height="232" 
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allow="encrypted-media">
+                <div class="item">
+                <iframe  src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt">               
                 </iframe>
-                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" 
-                        width="100%" height="232" 
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allow="encrypted-media">
+                </div>
+                <div class="item">
+                <iframe  src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt">
                 </iframe>
-                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" 
-                        width="100%" 
-                        height="232"
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allow="encrypted-media">
-                    </iframe>
-                <iframe class="item" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" 
-                        width="100%" 
-                        height="232"
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allow="encrypted-media">
+                </div>
+                <div class="item">
+                <iframe  src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD">
                 </iframe>
+                </div>
+                <div class="item">
+                <iframe  src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ">
+                </iframe>
+                </div>
             </div>
         </section>
     </div>
+    <div class="responsive-wrapper">
     <img class="img-phone-content" src="images/phone.png" 
          alt="the secret History of Woman in Coding">
     <section id="aboutUs" class="section-aboutUs">
@@ -80,16 +76,17 @@
                     vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
             </div>
     </section>
+    </div>
     <section class="section-specialGuests" id="interviews">
         <h2>Invitadas/os estelares</h2>
         <div class="gallery-images">
-            <img src="images/grace-hopper.png" alt="graceHopper special guest">
-            <img src="images/Katie-Bouman.png" alt="Katie-Bouman special guest">
-            <img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton special guest">
-            <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An ERA univec computer">
-            <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" 
+            <img src="images/gallery3.png" alt="graceHopper special guest">
+            <img src="images/gallery5.png" alt="Katie-Bouman special guest">
+            <img src="images/gallery4.png" alt="Margaret_Hamilton special guest">
+            <img src="images/gallery1.png" alt="An ERA univec computer">
+            <img src="images/gallery2.png" 
                  alt="Computer operators with an Eniac">
-            <img src="images/susan-kare.png" alt="Susan Kare special guest">
+            <img src="images/gallery6.png" alt="Susan Kare special guest">
         </div>
     </section>
     <section class="section-ourTopics" id="topics">
@@ -133,7 +130,7 @@
             <a href="https://twitter.com/" target="_blank">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="https://www.facebook.com/" targe="_blank">
+            <a href="https://www.facebook.com/" target="_blank">
                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
             </a>
             <a href="https://web.telegram.org/" target="_blank">
